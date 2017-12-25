@@ -1,0 +1,31 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Base</title>
+  {% include "core/snippets/flatly.html" %}
+  <!-- Deslocamento entre o body e o navbar -->
+  <link rel="stylesheet" href="{% static 'assets/mycustom.css' %}" media="screen" />
+</head>
+
+<body>
+  <!-- Inicio HTML Principal -->
+  {% include "core/snippets/navbar.html" %}
+  <div class="container">
+    <!-- Aqui entra o conteúdo de cada página -->
+
+    {% block content %}
+    {% endblock content %}
+
+    <!-- Aqui o rodapé padrão de cada página -->
+    {% include "core/snippets/footer.html" %}
+  </div>
+  <!-- Fim HTML Principal -->
+  {% include "core/snippets/js.html" %}
+</body>
+
+</html>
