@@ -2,5 +2,19 @@ echo "# prototipo" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin git@github.com:msilva1610/prototipo.git
+# git remote add origin git@github.com:msilva1610/prototipo.git
 git push -u origin master
+
+
+# Apache
+# allow the Apache process access to db.sqlite3.
+chmod 664 ~/myproject/db.sqlite3
+
+# give the group Apache runs under, the www-data group
+sudo chown :www-data ~/myproject/db.sqlite3
+
+# give the Apache group ownership over the database's parent directory
+sudo chown :www-data ~/myproject
+
+# Restart Apache
+sudo service apache2 restart

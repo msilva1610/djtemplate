@@ -9,3 +9,7 @@ def base(request):
 
 def home(request):
     return render(request, 'core/home.html')
+
+
+def tabela(request):
+    return render(request, 'core/tabela.html')
