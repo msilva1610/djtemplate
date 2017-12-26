@@ -1,0 +1,25 @@
+Starring atom-beautify [32mdone
+[39mStarring atom-bootstrap3 [32mdone
+[39mStarring atom-django [32mdone
+[39mStarring autoclose-html [32mdone
+[39mStarring autocomplete-python [32mdone
+[39mStarring busy-signal [32mdone
+[39mStarring color-picker [32mdone
+[39mStarring django-atom [32mdone
+[39mStarring django-templates [32mdone
+[39mStarring editorconfig [32mdone
+[39mStarring git-plus [32mdone
+[39mStarring intentions [32mdone
+[39mStarring language-django [32mdone
+[39mStarring linter [32mdone
+[39mStarring linter-flake8 [32mdone
+[39mStarring linter-pyflakes [32mdone
+[39mStarring linter-python-pep8 [32mdone
+[39mStarring linter-ui-default [32mdone
+[39mStarring nucleus-dark-ui [32mdone
+[39mStarring project-manager [32mdone
+[39mStarring proton-kai [32mdone
+[39mStarring python-autopep8 [32mdone
+[39mStarring python-tools [32mdone
+[39mStarring vagrant [32mdone
+[39m
