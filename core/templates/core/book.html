@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+
+{% load bootstrap3 %}
+
+{% block title %}
+    <title>Book</title>
+{% endblock title %}
+
+{% block content %}
+<div class="form-group page-header">
+  <h1>Cadastrar book:</h1>
+  <form class="form col-sm-9" method="POST">
+      {% csrf_token %}
+      {% comment %}
+      {% bootstrap_form form %}
+      {% endcomment %}
+
+      {% bootstrap_field form.name layout='vertical' size='sm' placeholder='título do livro'%}
+      {% bootstrap_field form.genre layout='vertical' size='sm'%}
+      {% buttons %}
+          <button type="submit" class="btn btn-primary">Save</button>
+      {% endbuttons %}
+  </form>
+
+</div>
+{% endblock%}

@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My APPs
     'core',
+    # pip install django-bootstrap3
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [

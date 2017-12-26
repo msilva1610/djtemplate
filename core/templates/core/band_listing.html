@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+
+{% load bootstrap3 %}
+
+{% block title %}
+    <title>Book</title>
+{% endblock title %}
+
+{% block content %}
+<div class="page-header">
+  <!-- search form -->
+  <form class="navbar-form navbar-right" action="." method="get">
+      <input id="search_box" name="search_box" type="text" placeholder="Search..." class="form-control">
+      <button type="submit" class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span></button>
+  </form>
+  <h1>Lista das bandas</h1>
+  {% for band in bands %}
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="badge">{{ band.get_members_count }}</span>
+          <h4><a href="{{ band.get_band_detail_url }}">{{ band.name }}</a></h4>
+          {% if band.can_rock %}
+              <p>This band can rock!</p>
+          {% endif %}
+        </li>
+      </ul>
+  {% endfor %}
+</div>
+{% endblock%}

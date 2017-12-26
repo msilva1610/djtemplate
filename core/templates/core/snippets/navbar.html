@@ -17,6 +17,18 @@
           <a href="{% url 'tabela' %}">Tabela</a>
         </li>
         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Cadastro<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="download">
+            <li><a href="{% url 'book' %}">Book</a></li>
+            <li><a href="{% url 'genre' %}">Gênero</a></li>
+            <li><a href="{% url 'person' %}">Person</a></li>
+            <li><a href="{% url 'group' %}">Group</a></li>
+            <li><a href="{% url 'membership' %}">Membership</a></li>
+            <li><a href="{% url 'band_listing' %}">Lista das Bandas</a></li>
+            <li><a href="">List</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Categorias <span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="download">
             <li><a href="">Notebooks</a></li>
