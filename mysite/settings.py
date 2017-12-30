@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My APPs
     'core',
+    'bandapp',
     # pip install django-bootstrap3
     'bootstrap3',
+    # pip install django-tables2
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +68,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # django-tables2
+                'django.template.context_processors.request',
             ],
         },
     },
