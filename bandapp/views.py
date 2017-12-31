@@ -1,8 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Band, Member
+from django.http import HttpResponse
 
 from django_tables2 import RequestConfig
 from .tables import BandTable, MemberTable
+
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request):
@@ -28,3 +31,12 @@ def banddetail(request, id):
 
     context = {'members': members, 'band': band}
     return render(request,'bandapp/band_detail.html', context)
+
+@login_required(login_url='bandapp/accounts/login/')
+def protected_view(request):
+    """ A view that can only be accessed by logged-in users """
+    return render(request, 'bandapp/protected.html', {'current_user': request.user})
+
+def message(request):
+    """ Message if is not authenticated. Simple view! """
+    return HttpResponse('Access denied!')

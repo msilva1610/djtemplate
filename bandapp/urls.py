@@ -20,4 +20,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'bandlist/', views.bandlist, name='bandlist'),
     url(r'^banddetail/(?P<id>\d+)/$', views.banddetail, name='banddetail'),
+    url(r'^protected/$', views.protected_view, name='protected'),
+    url(r'accounts/login/$', views.message, name='login_error'),
+    # url(r'accounts/login/$', django.contrib.auth.views.login),
 ]
