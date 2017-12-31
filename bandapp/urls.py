@@ -18,4 +18,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'bandlist/', views.bandlist, name='bandlist'),
+    url(r'^banddetail/(?P<id>\d+)/$', views.banddetail, name='banddetail'),
 ]

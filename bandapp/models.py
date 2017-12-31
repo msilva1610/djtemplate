@@ -15,6 +15,9 @@ class Band(models.Model):
     def __str__(self):
         return self.name
 
+    def get_band_detail_url(self):
+        return u"/bands/%i" % self.id
+
 class Member(models.Model):
 
     """A model of a rock band member."""

@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    <title>Bandlist</title>
+{% endblock title %}
+
+{% load render_table from django_tables2 %}
+
+{% block content %}
+
+<div class="page-header">
+  {% render_table band %}
+</div>
+
+{% endblock%}
