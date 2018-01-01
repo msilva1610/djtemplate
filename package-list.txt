@@ -1,25 +1,25 @@
-Starring atom-beautify [32mdone
-[39mStarring atom-bootstrap3 [32mdone
-[39mStarring atom-django [32mdone
-[39mStarring autoclose-html [32mdone
-[39mStarring autocomplete-python [32mdone
-[39mStarring busy-signal [32mdone
-[39mStarring color-picker [32mdone
-[39mStarring django-atom [32mdone
-[39mStarring django-templates [32mdone
-[39mStarring editorconfig [32mdone
-[39mStarring git-plus [32mdone
-[39mStarring intentions [32mdone
-[39mStarring language-django [32mdone
-[39mStarring linter [32mdone
-[39mStarring linter-flake8 [32mdone
-[39mStarring linter-pyflakes [32mdone
-[39mStarring linter-python-pep8 [32mdone
-[39mStarring linter-ui-default [32mdone
-[39mStarring nucleus-dark-ui [32mdone
-[39mStarring project-manager [32mdone
-[39mStarring proton-kai [32mdone
-[39mStarring python-autopep8 [32mdone
-[39mStarring python-tools [32mdone
-[39mStarring vagrant [32mdone
-[39m
+atom-beautify@0.30.9
+atom-bootstrap3@1.2.12
+atom-django@0.3.2
+autoclose-html@0.23.0
+autocomplete-python@1.10.5
+busy-signal@1.4.3
+color-picker@2.2.5
+django-atom@0.2.4
+django-templates@0.5.0
+editorconfig@2.2.2
+git-plus@7.10.0
+intentions@1.1.5
+language-django@0.1.1
+linter@2.0.0
+linter-flake8@2.3.0
+linter-pyflakes@0.3.2
+linter-python-pep8@0.2.0
+linter-ui-default@1.6.10
+nucleus-dark-ui@0.12.3
+project-manager@3.3.5
+proton-kai@0.1.0
+python-autopep8@0.1.3
+python-tools@0.6.9
+vagrant@0.1.0
+
