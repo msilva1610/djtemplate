@@ -115,7 +115,7 @@ class Member(models.Model):
         max_length=1
     )
 
-    band = models.ForeignKey("Band", related_name='band')
+    band = models.ForeignKey("Band",on_delete=models.PROTECT, related_name='band')
 
     class Meta:
         ordering = ['name']
